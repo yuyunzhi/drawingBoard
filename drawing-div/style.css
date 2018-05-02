@@ -1,0 +1,21 @@
+#canvas{
+    height:100vh;
+    width:100%;
+    background:blue;
+    position:relative;
+
+    }
+
+body{
+    margin:0px;
+    padding:0px;
+    text-align: center;
+}
+
+p{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+  
