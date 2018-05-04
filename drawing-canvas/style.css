@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#canvas{
+    background:blue;
+    display: block;
+}
+
+#eraser{
+    position: fixed;
+    bottom:0px;
+    left:0px;
+}
