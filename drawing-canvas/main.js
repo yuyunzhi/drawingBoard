@@ -13,28 +13,94 @@ autoSetSize(canvas);
 
 listenToUser(canvas);
 
-
 /********/
-  
+//画笔、橡皮擦按钮替换
 var eraserEnabled=false;
 
-eraser.onclick=function(){
-    eraserEnabled = !eraserEnabled;
-    if(eraserEnabled){
-        eraser.textContent= "画笔";
-    }else{
-        eraser.textContent= "橡皮擦";
+pen.onclick=function(){
+    eraserEnabled=false;
+    pen.classList.add('active');
+    eraser.classList.remove('active');
+    //颜色替换并高亮
+        red.onclick=function(){
+            context.fillStyle ="red";
+            context.strokeStyle="red";
+            red.classList.add('active');
+            yellow.classList.remove('active');
+            blue.classList.remove('active');
+            black.classList.remove('active');
+        }
+        yellow.onclick=function(){
+            context.fillStyle ="yellow";
+            context.strokeStyle="yellow";
+            yellow.classList.add('active');
+            red.classList.remove('active');
+            blue.classList.remove('active');
+            black.classList.remove('active');
+        }
+        blue.onclick=function(){
+            context.fillStyle ="blue";
+            context.strokeStyle="blue";
+            blue.classList.add('active');
+            yellow.classList.remove('active');
+            red.classList.remove('active');
+            black.classList.remove('active');
+        }
+        black.onclick=function(){
+            context.fillStyle ="black";
+            context.strokeStyle="black";
+            black.classList.add('active');
+            yellow.classList.remove('active');
+            blue.classList.remove('active');
+            red.classList.remove('active');
+        }
+
     }
+
+
+eraser.onclick=function(){
+    eraserEnabled=true;
+    eraser.classList.add('active');
+    pen.classList.remove('active');
 }
 
+/********/
+
+thin.onclick=function(){
+    thin.classList.add('active');
+    thick.classList.remove('active');    
+    context.lineWidth=4;
+}
+
+thick.onclick=function(){
+    thick.classList.add('active');
+    thin.classList.remove('active');
+    context.lineWidth=6;
+}
+
+clear.onclick=function(){
+    context.clearRect(0,0,canvas.clientWidth,canvas.clientHeight);  
+}
+
+download.onclick = function(){
+    var url = canvas.toDataURL('image/png');
+    var a = document.createElement('a');
+    document.body.appendChild(a);
+    a.href=url;
+    a.download='my drawing';
+    a.click();
+}
+
+
+
+/********/
+/********/
 /********/
 
 
 //drawLine
 function drawLine(x1,y1,x2,y2){
     context.beginPath();
-    context.strokeStyle="black";
-    context.lineWidth=6;
     context.moveTo(x1,y1);
     context.lineTo(x2,y2);
     context.stroke();
@@ -44,8 +110,7 @@ function drawLine(x1,y1,x2,y2){
 //drawCir
 function drawCir(x,y){
 context.beginPath()
-context.fillStyle ="black";
-context.arc(x,y,3,0,Math.PI*2);
+context.arc(x,y,0.5,0,Math.PI*2);
 context.fill();
 }
 

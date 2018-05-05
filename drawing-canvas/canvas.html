@@ -8,13 +8,48 @@
     <title>画板</title>
 </head>
 <body>
-    <canvas id="canvas" height="300" width="300">
+    <canvas id="canvas" height="300" width="300"></canvas>
+    
+    <div id="actions"class="actions x">
 
-    </canvas>
+        <svg id="pen"class="icon">
+                <use xlink:href="#icon-pencil"></use>
+            </svg>
+        
+        <svg id="eraser"class="icon">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
 
-    <button id='eraser'>橡皮擦</button>
+        <svg id="clear"class="icon">
+            <use xlink:href="#icon-delete"></use>
+        </svg>
+
+        <svg id="download"class="icon">
+            <use xlink:href="#icon-download"></use>
+        </svg>
+
+
+    <ul class='colorCir'>
+
+        <li id="black"class="black"></li>
+        <li id="red"class="red"></li>
+        <li id="yellow"class="yellow"></li>
+        <li id="blue"class="blue"></li>
+        
+    </ul>
+
+    <ul class='lineWidth'>
+        <li id="thin" class="thin"></li>
+        <li id="thick" class="thick"></li>
+    </ul>
+
+
+
+    </div>
+
 
     
 </body>
 <script src="./main.js"></script>
+<script src="//at.alicdn.com/t/font_653877_as5jr2p9ul5idx6r.js"></script>
 </html>

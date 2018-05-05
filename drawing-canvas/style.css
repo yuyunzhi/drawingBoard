@@ -2,16 +2,122 @@
     margin:0;
     padding:0;
 }
+
+ul,ol{
+    list-style: none; 
+}
+
+.colorCir{
+    top:60px;
+    left:20px;
+    position: fixed; 
+}
+.colorCir li{
+    border: 1px solid grey;
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-bottom:10px;
+}
+
+.colorCir .red{
+    background:red;
+}     
+.colorCir .yellow{
+    background:yellow;
+}  
+.colorCir .blue{
+    background:blue;
+}  
+.colorCir .black{
+    background:black;
+}  
+
+.colorCir .red.active{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+.colorCir .yellow.active{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+.colorCir .blue.active{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+.colorCir .black.active{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
 body{
     overflow: hidden;
 }
 #canvas{
-    background:blue;
     display: block;
+    position: fixed;
+    top:0px;
+    left:0px;
 }
 
-#eraser{
+.actions{
     position: fixed;
-    bottom:0px;
+    top:0px;
     left:0px;
+    padding-top:20px;
+    padding-left:15px;
+}
+.actions svg{
+    width:1.5em;
+    height:1.5em;
+    transition: all 0.3s;
+    margin:0 5px;
+}
+
+.actions svg.active{
+    fill:red; 
+    transform: scale(1.2);
+}
+
+.lineWidth{
+    position: relative;
+    left:-10px;
+    top:140px;
+
+
+}
+
+.lineWidth .thin{
+    height:0px;
+    width:40px;
+    border-top:2px solid black;
+    margin:15px;
+
+
+}
+
+.lineWidth .thick{
+    height:0px;
+    width:40px;
+    border-top:6px solid black;
+    margin:15px;
+
+}
+
+
+
+.lineWidth .thin.active{
+    transform: scale(1.2);
+}
+
+.lineWidth .thick.active{
+    transform: scale(1.2);
 }
