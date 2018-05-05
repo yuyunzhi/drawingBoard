@@ -21,41 +21,7 @@ pen.onclick=function(){
     eraserEnabled=false;
     pen.classList.add('active');
     eraser.classList.remove('active');
-    //颜色替换并高亮
-        red.onclick=function(){
-            context.fillStyle ="red";
-            context.strokeStyle="red";
-            red.classList.add('active');
-            yellow.classList.remove('active');
-            blue.classList.remove('active');
-            black.classList.remove('active');
-        }
-        yellow.onclick=function(){
-            context.fillStyle ="yellow";
-            context.strokeStyle="yellow";
-            yellow.classList.add('active');
-            red.classList.remove('active');
-            blue.classList.remove('active');
-            black.classList.remove('active');
-        }
-        blue.onclick=function(){
-            context.fillStyle ="blue";
-            context.strokeStyle="blue";
-            blue.classList.add('active');
-            yellow.classList.remove('active');
-            red.classList.remove('active');
-            black.classList.remove('active');
-        }
-        black.onclick=function(){
-            context.fillStyle ="black";
-            context.strokeStyle="black";
-            black.classList.add('active');
-            yellow.classList.remove('active');
-            blue.classList.remove('active');
-            red.classList.remove('active');
-        }
-
-    }
+ }
 
 
 eraser.onclick=function(){
@@ -64,6 +30,39 @@ eraser.onclick=function(){
     pen.classList.remove('active');
 }
 
+ //颜色替换并高亮
+red.onclick=function(){
+    context.fillStyle ="red";
+    context.strokeStyle="red";
+    red.classList.add('active');
+    yellow.classList.remove('active');
+    blue.classList.remove('active');
+    black.classList.remove('active');
+}
+yellow.onclick=function(){
+    context.fillStyle ="yellow";
+    context.strokeStyle="yellow";
+    yellow.classList.add('active');
+    red.classList.remove('active');
+    blue.classList.remove('active');
+    black.classList.remove('active');
+}
+blue.onclick=function(){
+    context.fillStyle ="blue";
+    context.strokeStyle="blue";
+    blue.classList.add('active');
+    yellow.classList.remove('active');
+    red.classList.remove('active');
+    black.classList.remove('active');
+}
+black.onclick=function(){
+    context.fillStyle ="black";
+    context.strokeStyle="black";
+    black.classList.add('active');
+    yellow.classList.remove('active');
+    blue.classList.remove('active');
+    red.classList.remove('active');
+}
 /********/
 
 thin.onclick=function(){
