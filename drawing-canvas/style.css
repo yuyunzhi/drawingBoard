@@ -2,7 +2,9 @@
     margin:0;
     padding:0;
 }
-
+body{
+    background:#eee
+}
 ul,ol{
     list-style: none; 
 }
@@ -49,7 +51,6 @@ ul,ol{
     transform: scale(1.2);
     transition: all 0.3s;
 }
-
 
 .icon {
     width: 1em; height: 1em;

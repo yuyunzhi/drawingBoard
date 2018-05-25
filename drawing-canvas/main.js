@@ -9,6 +9,7 @@ var lastPoint={
 }
 
 /*画板逻辑 */
+
 autoSetSize(canvas);
 
 listenToUser(canvas);
@@ -68,13 +69,13 @@ black.onclick=function(){
 thin.onclick=function(){
     thin.classList.add('active');
     thick.classList.remove('active');    
-    context.lineWidth=4;
+    context.lineWidth=2;
 }
 
 thick.onclick=function(){
     thick.classList.add('active');
     thin.classList.remove('active');
-    context.lineWidth=6;
+    context.lineWidth=4;
 }
 
 clear.onclick=function(){
@@ -109,7 +110,7 @@ function drawLine(x1,y1,x2,y2){
 //drawCir
 function drawCir(x,y){
 context.beginPath()
-context.arc(x,y,0.5,0,Math.PI*2);
+context.arc(x,y,0.1,0,Math.PI*2);
 context.fill();
 }
 
@@ -136,7 +137,6 @@ function listenToUser(){
     //特性检测
     if(document.body.ontouchstart!== undefined ){                    
         //是触屏设备
-        //
         canvas.ontouchstart =function(aaa){
             var x=aaa.touches[0].clientX;
             var y=aaa.touches[0].clientY;
@@ -162,8 +162,6 @@ function listenToUser(){
                     lastPoint=newPoint;      
                 }
             }
-            
-
         }
         canvas.ontouchend = function(aaa){
             using=false;
@@ -197,14 +195,10 @@ function listenToUser(){
                     lastPoint=newPoint;      
                 }
             }
-        }
-        
+        }       
         //鼠标松开监听
         canvas.onmouseup=function(aaa){
             using=false;
         }
-
     }
-    //鼠标点击监听
-
 }

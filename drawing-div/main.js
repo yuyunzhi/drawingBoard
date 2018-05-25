@@ -47,3 +47,7 @@ document.onmouseup=function(z){
   flagBox=false;
 
 }
+
+
+var b=123e-3;
+console.log(b);
