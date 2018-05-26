@@ -62,6 +62,7 @@ context.clearRect(x坐标,y坐标,长,宽);
 ```
 
 <p>更多canvas API可以查看MDN:</p>
+
 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Basic_usage"target="_blank">Canvas基本用法</a>
 
 <h2>三、然后怎么做？</h2>
@@ -127,7 +128,7 @@ canvas.onmouseup=function(aaa){
 
 <p>在iconfont里找到自己想要的icon，按照说明帮助使用smybol引用：</p>
 
-<a href="http://iconfont.cn/"target="_blank">iconfont-阿里巴巴矢量图库</a>
+<a href="http://iconfont.cn/">iconfont-阿里巴巴矢量图库</a>
 
 <h3>4、通过点击事件用js切换className</h3>
 
@@ -176,7 +177,7 @@ download.onclick = function(){
 
 <p>具体可看我之前写的文章：</p>
 
-<a href="https://zhuanlan.zhihu.com/p/36851344"target="_blank">移动端是怎么做适配的？</a>
+<a href="https://zhuanlan.zhihu.com/p/36851344">移动端是怎么做适配的？</a>
 
 <h3>8、特性检测没有onmouse事件，用ontouch事件</h3>
 
