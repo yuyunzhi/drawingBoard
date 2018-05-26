@@ -63,7 +63,7 @@ context.clearRect(x坐标,y坐标,长,宽);
 
 <p>更多canvas API可以查看MDN:</p>
 
-<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Basic_usage"target="_blank">Canvas基本用法</a>
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Basic_usage">Canvas基本用法</a>
 
 <h2>三、然后怎么做？</h2>
 
