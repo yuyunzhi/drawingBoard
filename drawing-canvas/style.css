@@ -103,6 +103,7 @@ body{
     margin:15px;
 
 
+
 }
 
 .lineWidth .thick{
@@ -117,8 +118,10 @@ body{
 
 .lineWidth .thin.active{
     transform: scale(1.2);
+ 
 }
 
 .lineWidth .thick.active{
     transform: scale(1.2);
+
 }
