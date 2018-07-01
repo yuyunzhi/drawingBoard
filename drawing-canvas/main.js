@@ -131,7 +131,12 @@ function autoSetSize(){
         setCanvasSize();
     }    
 }
-
+function preventBehavior(e) {
+    e.preventDefault()
+}
+    
+document.addEventListener("touchmove", preventBehavior, false)
+    
 
 function listenToUser(){
     //特性检测
@@ -202,3 +207,5 @@ function listenToUser(){
         }
     }
 }
+
+
